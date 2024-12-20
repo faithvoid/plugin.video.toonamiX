@@ -1,2 +1,2 @@
-# plugin.video.toonamiX
+# ToonamiX
 Toonami Aftermath add-on for XBMC4Xbox.
