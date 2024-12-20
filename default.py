@@ -52,15 +52,17 @@ def list_videos(category):
     for video in videos:
         list_item = xbmcgui.ListItem(label=video['title'])
         list_item.setInfo('video', {'title': video['title']})
-        list_item.setThumbnailImage(video['appImageURL'])
+        list_item.setThumbnailImage(video.get('appImageURL', ''))
         list_item.setProperty('IsPlayable', 'true')
-        url = get_url(action='play', video=video['id'])
-        is_folder = False
-        xbmcplugin.addDirectoryItem(_handle, url, list_item, is_folder)
-    # Add a sort method for the virtual folder items (alphabetically, ignore articles)
+        if 'id' in video:
+            url = get_url(action='play', video=video['id'])
+            is_folder = False
+            xbmcplugin.addDirectoryItem(_handle, url, list_item, is_folder)
+        else:
+            xbmc.log("Video entry missing 'id' key: {}".format(video), xbmc.LOGERROR)
     xbmcplugin.addSortMethod(_handle, xbmcplugin.SORT_METHOD_LABEL_IGNORE_THE)
     xbmcplugin.endOfDirectory(_handle)
-
+    
 def play_video(id):
     response = requests.get(url="http://api.toonamiaftermath.com:3000/streamUrl", params={'channelName': id})
     path = response.text if response.status_code == 200 else ''
