@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.tatv"
+version="1.0.0"
+name="Toonami Aftermath TV"
+provider-name="Toon">
+<requires>
+  <import addon="xbmc.python" version="2.24.0"/>
+  <import addon="script.module.requests" version="2.12.4"/>
+</requires>
+<extension point="xbmc.python.pluginsource" library="main.py">
+  <provides>video</provides>
+</extension>
+<extension point="xbmc.addon.metadata">
+  <summary lang="en">Toonami Aftermath TV for Kodi</summary>
+  <description lang="en">Non-stop classic television programming featuring Toonami, Cartoon Cartoons and more!</description>
+  <disclaimer lang="en">A non-profit fan broadcast. No affiliation with cartoon network.</disclaimer>
+  <assets>
+    <icon>icon.png</icon>
+    <fanart>fanart.jpg</fanart>   
+  </assets>
+  <news>Hello Kodi users! -Toon</news>
+</extension>
+</addon>
