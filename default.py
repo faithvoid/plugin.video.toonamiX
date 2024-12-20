@@ -16,7 +16,7 @@ _url = sys.argv[0]
 _handle = int(sys.argv[1])
 
 # from some web-site or online service.
-response = requests.get(url="http://toonamiaftermath.com/tatv.json")
+response = requests.get(url="http://api.toonamiaftermath.com:3000/tatv.json")
 VIDEOS = response.json() if response.status_code == 200 else {}
 
 def get_url(**kwargs):
