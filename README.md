@@ -15,3 +15,6 @@ Toonami Aftermath add-on for XBMC4Xbox. Backported from the Kodi "TATV" addon.
 
 ## TODO:
 - Implement guide.
+
+## Credits:
+- Toon - for Toonami Aftermath + the TATV plugin!
