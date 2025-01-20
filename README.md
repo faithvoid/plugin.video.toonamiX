@@ -18,6 +18,7 @@ Toonami Aftermath add-on for XBMC4Xbox. Backported from the Kodi "TATV" addon.
 - Implement guide functionality as context option using channelsCurrentMedia API
 - Replace titles with channel name + currently airing show using channelsCurrentMedia API
 - Integrate chat as notifications(?)
+- Integrate Snick, MTV + Movies.
 
 ## Credits:
 - Toon - for Toonami Aftermath + the TATV plugin!
