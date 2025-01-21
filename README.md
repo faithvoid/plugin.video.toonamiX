@@ -24,6 +24,7 @@ Toonami Aftermath add-on for XBMC4Xbox. Backported and modified from the Kodi "T
 ## TODO:
 - Integrate chat as notifications(?)
 - Improve timezone detection / modification
+- Replace show name values with their "fullname" equivalents where available (as right now shows like Dragon Ball Z simply appear as 'DBZ')
 - Optimize, optimize, optimize.
 
 ## Credits:
