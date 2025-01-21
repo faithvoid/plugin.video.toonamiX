@@ -1,5 +1,5 @@
 # ToonamiX
-Toonami Aftermath add-on for XBMC4Xbox. Backported from the Kodi "TATV" addon.
+Toonami Aftermath add-on for XBMC4Xbox. Backported and modified from the Kodi "TATV" addon.
 
 ![](icon.png)
 
