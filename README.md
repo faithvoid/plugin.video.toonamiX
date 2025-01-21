@@ -13,7 +13,7 @@ Toonami Aftermath add-on for XBMC4Xbox. Backported from the Kodi "TATV" addon.
 - View the schedule of your favourite channel via the context menu!
 
 ## How To Use:
-- Download & extract the latest release file
+- Download & extract the latest release file (if you'd like to test out the new schedule functions, the entire repository instead!)
 - If outside of EST, modify your timezone in "default.py"
 - Copy the "ToonamiX" folder to Q:/plugins/video
 
