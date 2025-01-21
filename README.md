@@ -24,6 +24,7 @@ Toonami Aftermath add-on for XBMC4Xbox. Backported and modified from the Kodi "T
 ## TODO:
 - Integrate chat as notifications(?)
 - Improve timezone detection / modification
+- Optimize, optimize, optimize.
 
 ## Credits:
 - Toon - for Toonami Aftermath + the TATV plugin!
