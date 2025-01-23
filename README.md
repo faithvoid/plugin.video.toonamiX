@@ -19,6 +19,7 @@ Toonami Aftermath add-on for XBMC4Xbox. Backported and modified from the Kodi "T
 
 ## Issues:
 - 720p video resolution (not console resolution!) WILL crash your Xbox, so make sure videos are rendering at 480p in your settings! This isn't an add-on issue, this is a hardware issue.
+- Sometimes the stream may not load. Try it again, and if it doesn't work, you may have to come back later. This doesn't seem to be an issue with the addon, as whenever this happens I also can't connect to TA channels via .m3u8 on any other system, but the homepage stream still works.
 - You tell me.
 
 ## TODO:
