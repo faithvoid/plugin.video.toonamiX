@@ -116,8 +116,11 @@ def list_videos(category):
         # Get the current show title from the schedule
         schedule = fuzzy_find_schedule(channel_name)  # Get the schedule for the channel
         if schedule and isinstance(schedule, list) and len(schedule) > 0:
-            # Append the first scheduled show's title to the channel name
-            channel_name += " - " + schedule[0]["name"]  # Access the "name" of the first show in the schedule
+            # Append the first scheduled show's title to the channel name, if 'name' key exists
+            if 'name' in schedule[0]:
+                channel_name += " - " + schedule[0]["name"]
+            else:
+                xbmc.log("No 'name' key found in schedule item: {}".format(schedule[0]), xbmc.LOGERROR)
         
         # Create a list item
         list_item = xbmcgui.ListItem(label=channel_name)
@@ -136,7 +139,7 @@ def list_videos(category):
         xbmcplugin.addDirectoryItem(_handle, url, list_item, False)
 
     xbmcplugin.endOfDirectory(_handle)
-
+    
 def play_video(id):
     response = requests.get(url="http://api.toonamiaftermath.com:3000/streamUrl", params={'channelName': id})
     path = response.text if response.status_code == 200 else ''
